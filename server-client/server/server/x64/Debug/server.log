@@ -1,2 +1,3 @@
-﻿  server.cpp
+﻿  SolveSudoku.cpp
+C:\Users\santa\Desktop\Coding\cpp\server-client\server\server\SolveSudoku.cpp(54,7): warning C4101: 'sudokuArray': unreferenced local variable
   server.vcxproj -> C:\Users\santa\Desktop\Coding\cpp\server-client\server\x64\Debug\server.exe

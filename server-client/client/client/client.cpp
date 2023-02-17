@@ -60,8 +60,23 @@ int main()
     }
 
     // Communicate with the Server
+    char sudoku[162] = ""; // 81 ciprs + 80 atstarpes + beigu simbols
 
+    cout << "Please input your sudoku puzzle.\nStart with the top row and work your way down by inputting numbers from left to right." << endl;
+    cout << "Empty places replace with 0." << endl;
 
+    cin.getline(sudoku, 162);
+
+    int byteCount = send(clientSocket, sudoku, 162, 0);
+
+    if (byteCount > 0)
+    {
+        cout << "Sudoku sent" << endl;
+    }
+    else
+    {
+        WSACleanup();
+    }
 
     // Close Socket
 

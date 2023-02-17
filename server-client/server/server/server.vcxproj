@@ -129,6 +129,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="server.cpp" />
+    <ClCompile Include="SolveSudoku.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SolveSudoku.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

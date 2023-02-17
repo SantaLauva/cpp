@@ -1,6 +1,8 @@
 #include <iostream>
 #include <ws2tcpip.h>
 #include <tchar.h>  // _T identifier
+#include "SolveSudoku.h"
+
 using namespace std;
 
 int main()
@@ -83,6 +85,27 @@ int main()
     }
 
     cout << "Accepted connection" << endl;
+
+    // Receive sudoku
+
+    char sudoku[162];
+
+    int byteCount = recv(acceptSocket, sudoku, 162, 0);
+
+    if (byteCount > 0)
+    {
+        if (solveSudoku(sudoku) == true)
+            //cout << sudoku << endl;
+            sudokuArray();
+        else cout << "No solution exists" << endl;
+    }
+    else
+    {
+        WSACleanup();
+    }
+
+    // Close Socket
+    
     system("pause");
     WSACleanup();
 
