@@ -1,3 +1,5 @@
 ﻿  SolveSudoku.cpp
-C:\Users\santa\Desktop\Coding\cpp\server-client\server\server\SolveSudoku.cpp(54,7): warning C4101: 'sudokuArray': unreferenced local variable
+  server.cpp
+  Generating Code...
+C:\Users\santa\Desktop\Coding\cpp\server-client\server\server\SolveSudoku.cpp(70): warning C4172: returning address of local variable or temporary: sudokuArray
   server.vcxproj -> C:\Users\santa\Desktop\Coding\cpp\server-client\server\x64\Debug\server.exe

@@ -1,5 +1,5 @@
 #pragma once
 
-void sudokuArray();
+char* sudokuArray();
 
 bool solveSudoku(char sudokuString[]);

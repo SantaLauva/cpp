@@ -78,6 +78,18 @@ int main()
         WSACleanup();
     }
 
+    int byteCount2 = recv(clientSocket, sudoku, 162, 0);
+    if (byteCount2 > 0)
+    {
+        cout << "Solved Sudoku: " << endl;
+        for (int i=0; i<162; i++)
+        {
+            if ((i > 0) && (i % 18 == 0)) cout << endl;
+            cout << sudoku[i];   
+        }
+    }
+    cout << endl;
+
     // Close Socket
 
     system("pause");

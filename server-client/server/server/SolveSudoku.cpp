@@ -49,7 +49,7 @@ bool canBePlaced(int row, int col, int number)
 	return false;
 }
 
-void sudokuArray()
+char* sudokuArray()
 { 
 	char sudokuArray[162];
 	int k = 0; // iterators
@@ -58,14 +58,16 @@ void sudokuArray()
 	{
 		for (int col = 0; col < 9; col++)
 		{
-			/*sudokuArray[k] = sudoku[row][col];
+			string t = to_string(sudoku[row][col]);
+			char s = t.c_str()[0];
+
+			sudokuArray[k] = s;
 			sudokuArray[k+1] = ' ';
-			k += 2;*/
-			cout << sudoku[row][col] << " ";
+			k += 2;
 		}
 	}
 
-	//return sudokuArray;
+	return sudokuArray;
 }
 
 bool solveSudoku()

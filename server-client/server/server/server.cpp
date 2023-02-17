@@ -95,9 +95,8 @@ int main()
     if (byteCount > 0)
     {
         if (solveSudoku(sudoku) == true)
-            //cout << sudoku << endl;
-            sudokuArray();
-        else cout << "No solution exists" << endl;
+            send(acceptSocket, sudokuArray(), 162, 0);
+        else send(acceptSocket, "No solution exists", 19, 0);
     }
     else
     {
