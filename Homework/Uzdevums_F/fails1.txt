@@ -1,0 +1,9 @@
+1_Saule
+1_Merkurs
+1_Venera
+1_Zeme
+1_Mars
+1_Jupiters
+1_Saturns
+1_Urâns
+1_Neptûns
